@@ -91,9 +91,9 @@ public boolean allFiring()
 
     boolean firingSuccess = false;
 
-	if (firingMode==SINGLE) {
+	if (firingMode==FiringMode.SINGLE) {
 		firingSuccess=singleFiring();
-	}else if (firingMode==ALL) {
+	}else if (firingMode==FiringMode.ALL) {
 		firingSuccess=allFiring();
 	}
 
