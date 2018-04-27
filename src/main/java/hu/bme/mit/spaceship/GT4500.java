@@ -91,16 +91,12 @@ public boolean allFiring()
 
     boolean firingSuccess = false;
 
-    switch (firingMode) {
-      case SINGLE:
-        firingSuccess = singleFiring();
-        break;
+	if (firingMode==SINGLE) {
+		firingSuccess=singleFiring();
+	}else if (firingMode==ALL) {
+		firingSuccess=allFiring();
+	}
 
-      case ALL:
-        
-	firingSuccess = allFiring();
-        break;
-    }
 
     return firingSuccess;
   }
